@@ -1,5 +1,11 @@
 """hub.py - Team-Brain 协作中心（后台线程版）
 
+
+# [中文说明]
+# 本文件：hub.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 Hub 运行在独立后台线程中，不阻塞主 agent 响应。
 消息通过文件 MessageBus 传递（messages/inbox/ + messages/outbox/）。
 

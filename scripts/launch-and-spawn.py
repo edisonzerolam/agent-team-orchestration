@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+
+# [中文说明]
+# 本文件：launch-and-spawn.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 launch-and-spawn.py - team-brain.py launch + 自动 spawn 子代理 包装器
 
 P0 修复：team-brain.py launch 后没有 spawn 子代理，agent 永远 pending。

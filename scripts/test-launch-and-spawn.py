@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+
+# [中文说明]
+# 本文件：test-launch-and-spawn.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 test-launch-and-spawn.py - launch-and-spawn.py 单元测试
 
 覆盖：

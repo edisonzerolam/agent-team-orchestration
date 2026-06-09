@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+
+# [中文说明]
+# 本文件：skill-scanner.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 Skill Scanner - 动态技能发现工具（jieba分词版 v1.2）
 支持中英文混合分词和TF-IDF语义匹配
 

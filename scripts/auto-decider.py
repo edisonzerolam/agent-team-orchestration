@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+
+# [中文说明]
+# 本文件：auto-decider.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 ClawTeam 协调人自动决策引擎 v2.0.0
 根据错误类型和重试次数自动决定：retry / skip / abort
 

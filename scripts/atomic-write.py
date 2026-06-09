@@ -1,5 +1,11 @@
 """atomic-write.py — 跨平台原子文件写入工具
 
+
+# [中文说明]
+# 本文件：atomic-write.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 功能：
 - atomic_write(path, content, encoding='utf-8'): 原子写入（临时文件+os.replace）
 - atomic_append(path, line, encoding='utf-8', max_lines=20): 原子追加（保留最近N行）

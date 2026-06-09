@@ -1,4 +1,10 @@
 """
+
+# [中文说明]
+# 本文件：mimo_rate_limiter.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 MIMO 大模型限速器 - 适用于 agent-team-orchestration 和多线程并行技能
 
 速率限制配置:

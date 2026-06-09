@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 """
+
+# [中文说明]
+# 本文件：health-dashboard.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 ClawTeam 健康检查 Dashboard v1.0.0
 纯 Python 内置库实现，支持 serve 和 export 两种模式
 """

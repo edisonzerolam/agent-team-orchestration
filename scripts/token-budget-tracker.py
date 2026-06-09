@@ -1,5 +1,11 @@
 """token-budget-tracker.py — Token消耗追踪与告警
 
+
+# [中文说明]
+# 本文件：token-budget-tracker.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 功能：
 - 记录每个agent的token消耗
 - 计算总预算消耗百分比

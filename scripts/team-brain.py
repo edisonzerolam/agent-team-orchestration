@@ -1,5 +1,11 @@
 """ClawTeam Team Brain - Multi-agent orchestration script."""
 
+
+# [中文说明]
+# 本文件：team-brain.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 __doc__ = """Usage:
   python team-brain.py plan <task> <description>
   python team-brain.py launch <topic> <description> [max_agents] [--full-discussion]

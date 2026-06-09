@@ -1,5 +1,11 @@
 """test_enhancements.py — P0/P1/P2 增强功能回归测试套件
 
+
+# [中文说明]
+# 本文件：test_enhancements.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 Usage:
     python test_enhancements.py
     python test_enhancements.py --module=conflict_detector

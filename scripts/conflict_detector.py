@@ -1,5 +1,11 @@
 """conflict-detector.py — P0 冲突检测器（关键词+规则，无 NLP 依赖）
 
+
+# [中文说明]
+# 本文件：conflict_detector.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 Usage:
     from conflict_detector import ConflictDetector, Conflict, Argument
     

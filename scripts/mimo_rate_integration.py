@@ -1,4 +1,10 @@
 """
+
+# [中文说明]
+# 本文件：mimo_rate_integration.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 MIMO 限速器集成模块 - 将限速器集成到 agent-team-orchestration
 
 使用方式:

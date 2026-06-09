@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 """Agent Self-Heal Module v2.0.0
 
+
+# [中文说明]
+# 本文件：self_heal.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 v2.0.0 (2026-05-24):
 - 实现 fix_powershell_regex 真正修复逻辑（转义 $ 等特殊字符）
 - 增加 Windows 路径兼容性处理

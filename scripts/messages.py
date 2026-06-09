@@ -1,5 +1,11 @@
 """messages.py - 专家消息工具（写 outbox / 读 inbox）
 
+
+# [中文说明]
+# 本文件：messages.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 专家 subagent 在其 spawn prompt 中会包含以下函数的简化版。
 这里提供 Python 模块版，供独立脚本使用。
 

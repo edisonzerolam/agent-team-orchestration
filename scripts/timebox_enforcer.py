@@ -1,5 +1,11 @@
 """timebox-enforcer.py — P0 时间盒执行器（无 Timer 泄漏，monotonic clock）
 
+
+# [中文说明]
+# 本文件：timebox_enforcer.py
+# 用途：OpenClaw 框架的核心脚本之一
+# 详细文档：请阅读对应的 SKILL.md 和 references/
+
 Usage:
     from timebox_enforcer import TimeBoxEnforcer, TIMEBOX_CONFIG
     
