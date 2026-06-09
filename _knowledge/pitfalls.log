@@ -1,0 +1,35 @@
+# 超时相关失败模式
+
+## 2026-05-22
+
+### 超时-T1：无评估直接spawn
+症状：spawn时未做时长评估，默认T3(600s)导致简单任务浪费资源等待
+根因：跳过Step 0
+预防：SKILL.md强制spawn前执行Step 0
+
+### 超时-T2：T5任务未展期
+症状：深度研究任务1200s内未完成，但实际再有600s可完成
+根因：展期机制未触发
+预防：T5任务进度>80%时自动提示展期
+
+### 超时-T3：跨agent超时不同步
+症状：Builder超时但Reviewer未超时，状态不一致
+根因：未统一超时管理
+预防：Orchestrator统一管理所有子agent超时
+
+## 2026-05-22（续）
+
+### checkpoint-T1：T3+任务未强制checkpoint
+症状：T3任务中断后无法续接，checkpoint间隔5分钟导致中间进度丢失
+根因：默认5分钟间隔不满足T3+要求
+预防：T3+任务必须每2分钟checkpoint（已追加到checkpoint-protocol.md）
+
+### checkpoint-T2：completed_subtasks不完整
+症状：续接时新agent不知道已完成了哪些子任务
+根因：checkpoint中未强制填写completed_subtasks字段
+预防：T3+ checkpoint强制包含completed_subtasks + next_concrete_action（已追加）
+
+### checkpoint-T3：data_snapshot缺失
+症状：续接后数据环境不一致（cache/变量状态丢失）
+根因：未保存关键变量快照
+预防：T3+ checkpoint强制包含data_snapshot（已追加到T3+增强字段）

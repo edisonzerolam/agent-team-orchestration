@@ -1,0 +1,9 @@
+{
+  "slug": "agent-team-orchestration",
+  "name": "agent-team-orchestration",
+  "description": "Orchestrate multi-agent teams with roles, task lifecycles, handoff protocols, and review workflows.",
+  "version": "4.0.0",
+  "source": "self",
+  "registry": "clawhub",
+  "fixed_at": "2026-05-18"
+}

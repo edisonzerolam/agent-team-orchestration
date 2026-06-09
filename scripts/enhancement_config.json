@@ -1,0 +1,77 @@
+{
+  "_comment": "Agent-Team-Orchestration 增强功能开关（feature flags）",
+  "_version": "4.0.0",
+  "_updated": "2026-06-03",
+  "enhancements": {
+    "structured_argument": {
+      "enabled": true,
+      "description": "P0: 结构化论证嵌入 CHALLENGE payload"
+    },
+    "conflict_detector": {
+      "enabled": true,
+      "description": "P0: 关键词+规则冲突检测"
+    },
+    "timebox_enforcer": {
+      "enabled": true,
+      "description": "P0: 时间盒强制执行"
+    },
+    "debate_controller": {
+      "enabled": true,
+      "description": "P1: 辩论控制器（嵌入 Hub）"
+    },
+    "anti_formalism": {
+      "enabled": true,
+      "description": "P0: 反形式主义检查（2维）"
+    },
+    "expert_weights": {
+      "enabled": true,
+      "description": "P1: 专家权重系统"
+    },
+    "semantic_detector": {
+      "enabled": false,
+      "description": "P1: 语义冲突检测（需 sentence-transformers）"
+    },
+    "discussion_history": {
+      "enabled": false,
+      "description": "P2: 历史讨论模式库"
+    },
+    "consensus_metrics": {
+      "enabled": true,
+      "description": "P2: 共识度量工具"
+    },
+    "expert_matcher": {
+      "enabled": false,
+      "description": "P2: 专家能力匹配"
+    }
+  },
+  "timebox_profiles": {
+    "simple": {
+      "pre_discussion": 300,
+      "debate_round": 300,
+      "consensus_check": 300,
+      "total": 1800
+    },
+    "medium": {
+      "pre_discussion": 600,
+      "debate_round": 600,
+      "consensus_check": 600,
+      "total": 3600
+    },
+    "complex": {
+      "pre_discussion": 900,
+      "debate_round": 600,
+      "consensus_check": 600,
+      "total": 7200
+    }
+  },
+  "anti_formalism": {
+    "min_length": 50,
+    "downweight_threshold": 0.6,
+    "ignore_threshold": 0.3
+  },
+  "debate": {
+    "max_rounds": 3,
+    "max_messages_per_round": 10,
+    "token_budget_ratio": 0.3
+  }
+}
